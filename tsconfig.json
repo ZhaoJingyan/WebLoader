@@ -1,0 +1,10 @@
+{
+
+    "compilerOptions":{
+        "module": "system",
+        "outFile": "dist/load.js",
+        "noUnusedLocals": true
+    },
+
+    "include":["src/ts/*"]
+}
