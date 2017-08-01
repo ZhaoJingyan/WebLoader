@@ -1,9 +1,12 @@
 {
 
     "compilerOptions":{
+        "rootDir": ".",
         "module": "system",
         "outFile": "dist/load.js",
-        "noUnusedLocals": true
+        "noUnusedLocals": true,
+        "sourceMap": true,
+        "removeComments":true
     },
 
     "include":["src/ts/*"]
