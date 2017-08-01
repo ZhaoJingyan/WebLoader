@@ -9,11 +9,11 @@ gulp.task('compile', function () {
         .pipe(sourcemaps.init())
         .pipe(typescriptProject());
     return tsResult.js
-        .pipe(sourcemaps.write("./", {
+        .pipe(sourcemaps.write('./', {
             includeContent: false,
-            sourceRoot: "../"
+            sourceRoot: '../'
         }))
-        .pipe(gulp.dest("./"));
+        .pipe(gulp.dest('./'));
 });
 
 
@@ -23,10 +23,10 @@ gulp.task('server', ['compile'], function () {
         server: './',
         port: 8080,
         open: 'tunnel',
-        browser: "chrome"
+        browser: 'chrome'
     });
 
-    gulp.watch("src/ts/*", ['compile']);
-    gulp.watch("dist/load.js").on('change', browserSync.reload);
+    gulp.watch('src/ts/*', ['compile']);
+    gulp.watch('dist/load.js').on('change', browserSync.reload);
 
 });

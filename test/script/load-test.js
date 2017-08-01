@@ -1,0 +1,1 @@
+console.log('This is load-test.js, just a test javascript file.');
